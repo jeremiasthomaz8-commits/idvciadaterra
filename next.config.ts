@@ -4,6 +4,6 @@ const config: NextConfig = {
   trailingSlash: true,
   images: { unoptimized: true },
   poweredByHeader: false,
-  experimental: { globalNotFound: true, cpus: 1 },
+  experimental: { cpus: 1 },
 };
 export default config;

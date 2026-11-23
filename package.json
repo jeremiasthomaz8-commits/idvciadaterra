@@ -1,29 +1,22 @@
 {
-  "name": "cia-da-terra-redesign",
+  "name": "idvciadaterra",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1",
-    "build": "next build && node scripts/postbuild.mjs && node scripts/build-worker.mjs",
-    "check": "tsc --noEmit",
-    "preview": "node scripts/preview.mjs",
-    "check:intake": "node scripts/check-intake.mjs"
+    "build": "next build",
+    "check": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "lucide-react": "1.76.0",
     "next": "16.4.6",
-    "next-intl": "4.15.3",
     "react": "19.3.1",
     "react-dom": "19.3.1"
   },
   "devDependencies": {
-    "@babel/parser": "8.1.2",
     "@types/node": "26.6.6",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
-    "cheerio": "1.2.0",
-    "prettier": "3.10.1",
-    "sharp": "0.35.5",
     "typescript": "7.0.2"
   }
 }
